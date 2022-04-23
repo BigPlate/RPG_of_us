@@ -21,18 +21,28 @@ public class Main {
         boolean Player_whether_story_hearing_boolean = true; // 그래서 스토리 들을건지 안들을건지는 이걸로 판단. 기본값는 듣는 것으로 함.
         boolean Player_whether_story_hearing_chose = false; // 스토리 들을거지 안들을건지 제대로 선택했는지는 이걸로 판단. 기본값은 false.
         int Player_money_coin = 0; // 플레이어 소유 돈[코인] 선언. 기본값은 0.
+        String Player_nickname = ""; // 플레이어 닉네임 선언. 기본값은 공백
+
         System.out.println("우리의 RPG에 온 것을 환영합니다."); // 판에박힌환영대사
-        System.out.println("게임을 시작하기 전에 화면을 8줄 + 입력 1줄로 맞춰주세요.");
+        System.out.println("게임을 시작하기 전에 화면을 12줄 + 입력라인 1줄로 맞춰주세요.");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("");
         System.out.println("");
         System.out.println("");
         System.out.println("");
         System.out.println("");
         System.out.println("원하는 별명을 입력해서 진행");
-        String Nickname = inputReader.nextLine(); // 판에박힌환영대사 끝
+        Player_nickname = inputReader.nextLine(); // 판에박힌환영대사 끝
 
-        System.out.println("[ " + Nickname + " ]님이군요!"); // 별명칭찬타임
+        System.out.println("[ "+ Player_nickname +" ]님이군요!"); // 별명칭찬타임
         System.out.println("무슨뜻인지는 모르지만, 좋은 이름인거 같아요!");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("");
         System.out.println("");
         System.out.println("");
@@ -47,6 +57,10 @@ public class Main {
             System.out.println("이제 직업을 선택할 차례입니다.");
             System.out.println("전사와 마법사 중 원하는 직업을 선택해주세요.");
             System.out.println("선택지 외의 숫자를 입력하면 진행되지 않습니다.");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
             System.out.println("");
             System.out.println("");
             System.out.println("");
@@ -82,6 +96,10 @@ public class Main {
             System.out.println("들어본 적이 한번도 없다면 스킵하지 말아주세요(중요함).");
             System.out.println("");
             System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("");
             System.out.println("0을 입력해서 스토리 스킵하기");
             System.out.println("1을 입력해서 스토리 듣기");
             Player_whether_story_hearing_choice = inputReader.nextLine(); // 들을거임?
@@ -112,8 +130,12 @@ public class Main {
 
         // 스토리 체킹구역 끝
 
-        System.out.println("[ 위치 : "+ Player_now_spot + " ]"+"[ 직업 : " + Player_role_name +" ]");
-        System.out.println("< 공격력 : "+ Player_atk +" > < 현재 체력 : "+Player_now_hp+" / "+Player_max_hp+" >");
+        System.out.println("[ 위치 : " + Player_now_spot + " ]"+"[ 소유한 코인 : " + Player_money_coin + "코인]");
+        System.out.println("[ 이름 : " + Player_nickname + "]"+"[ 직업 : " + Player_role_name + " ]:");
+        System.out.println("< 공격력 : " + Player_atk + " > < 현재 체력 : "+Player_now_hp + " / " +Player_max_hp+ " >");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
         System.out.println("");
         System.out.println("");
         System.out.println("");
