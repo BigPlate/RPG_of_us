@@ -20,7 +20,7 @@ public class Main {
         String Player_whether_story_hearing_choice = "1"; // 스토리 들을건지 선택하는 변수. 기본값은 1
         boolean Player_whether_story_hearing_boolean = true; // 그래서 스토리 들을건지 안들을건지는 이걸로 판단. 기본값는 듣는 것으로 함.
         boolean Player_whether_story_hearing_chose = false; // 스토리 들을거지 안들을건지 제대로 선택했는지는 이걸로 판단. 기본값은 false.
-
+        int Player_money_coin = 0; // 플레이어 소유 돈[코인] 선언. 기본값은 0.
         System.out.println("우리의 RPG에 온 것을 환영합니다."); // 판에박힌환영대사
         System.out.println("게임을 시작하기 전에 화면을 8줄 + 입력 1줄로 맞춰주세요.");
         System.out.println("");
